@@ -1,64 +1,46 @@
 *{
     margin: 0;
-}
-
-body{
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-header h1{
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 table{
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0px auto;
+    padding: 39px;
+    background-color: #0ca549;
+    border-radius: 25px;
+    width: 499px;
+    height: 500px;
 }
 
-#resultado{
-    border: 2px solid black;
-    background-color: yellow;
-    margin-left: 43.3vw;
-    margin-right: 43.3vw;
-    min-width: 92px;
-    min-height: 5px;
+table button {
+    width: 100px;
+    height: 75px;
+    font-size: 20px;
 }
 
-#dividir button{
-    background-color: yellow;
+table .c{
+    width: 200px;
 }
 
-#por button{
-    background-color: yellow;
+table .zero{
+    width: 200px;
 }
 
-#menos button{
-    background-color: yellow;
+table .igual{
+    width: 200px;
 }
 
-#mas button{
-    background-color: yellow;
-}
-
-#igual button{
-    background-color: yellow;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-#cols2 button{
-   padding-left: 25px;
-   padding-right: 25px;
-}
-
-#colsc button{
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-footer{
+#resultado {
+    display: block;
+    border-width: 1px;
+    margin: 5px auto;
+    padding-top: 1px auto;
+    background-color: #0ca549;
+    border-radius: 25px;
+    width: 350px;
+    height: 50px;
+    font-size: 50px;
     text-align: center;
 }

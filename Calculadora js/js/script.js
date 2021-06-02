@@ -102,13 +102,16 @@ function nueve() {
 
 function borrar() {
     result.value = "";
+    val1 = 0;
+    val3 = 0;
+    val2 = "";
 }
 
 // Operaciones
 
 function operaciones() {
 
-    if (val2 === "+") {
+     if (val2 === "+") {
         val3 = result.value;
         resultado = parseInt(val1) + parseInt(val3);
         result.value = resultado;
@@ -136,5 +139,6 @@ function operaciones() {
         val3 = result.value;
         resultado = parseInt(val1) % parseInt(val3);
         result.value = resultado;
-    }
+    } 
+
 }
