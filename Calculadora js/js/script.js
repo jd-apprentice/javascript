@@ -4,7 +4,6 @@ let val1 = 0; // primer numero
 let val2 = ""; // operador
 let val3 = 0; // segundo numero
 let resultado = 0;
-let count = 0;
 
 const getZero = document.querySelector('.zero').addEventListener("click", zero);
 const getOne = document.querySelector('.uno').addEventListener("click", uno);
@@ -29,67 +28,33 @@ let result = document.querySelector('#resultado');
 
 function mas() {
     val1 = result.value;
-    if (count > 1) {
-        console.log('operacion no valida');
-    }
-    else {
-        count++;
-        val2 = "+";
-        result.value = "";
-    }
-
+    val2 = "+";
+    result.value = "";
 }
 
 function menos() {
     val1 = result.value
-    if (count > 0) {
-        console.log('operacion no valida')
+    val2 = "-";
+    result.value = "";
     }
-    else {
-        count++;
-        val2 = "-";
-        result.value = "";
-    }
-
-}
 
 function por() {
     val1 = result.value
-    if (count > 0) {
-        console.log('operacion no valida')
+    val2 = "*";
+    result.value = "";
     }
-    else {
-        count++;
-        val2 = "*";
-        result.value = "";
-    }
-
-}
 
 function dividir() {
     val1 = result.value
-    if (count > 0) {
-        console.log('operacion no valida')
+    val2 = "/";
+    result.value = "";
     }
-    else {
-        count++;
-        val2 = "/";
-        result.value = "";
-    }
-
-}
 
 function modulo() {
     val1 = result.value
-    if (count > 0) {
-        console.log('operacion no valida')
+    val2 = "%";
+     result.value = "";
     }
-    else {
-        count++;
-        val2 = "%";
-        result.value = "";
-    }
-}
 
 // Numeros
 
@@ -137,7 +102,6 @@ function nueve() {
 
 function borrar() {
     result.value = "";
-    count = 0;
 }
 
 // Operaciones
