@@ -24,9 +24,9 @@ function mostrarFoto2() {
         .then(data => { 
 
             const imagen = data.url;
-            const format = imagen.slice(-3);
+            const format = imagen.slice(-4);
         
-            if (format === 'mp4') {
+            if (format === '.mp4' || format === 'webm') {
                 mostrarFoto2();
        }    else {
            grabImg2.src = `${data.url}`;
