@@ -1,5 +1,6 @@
 const grabImg = document.getElementById('img_gatito');
 const grabImg2 = document.getElementById('img_perrito');
+const grabVid = document.getElementById('vid_perrito');
 const grabButton = document.getElementById('btn_gatito');
 const grabButton2 = document.getElementById('btn_perrito');
 
@@ -20,7 +21,15 @@ function mostrarFoto() {
 function mostrarFoto2() {
     fetch(enlace2)
         .then(res => res.json())
-        .then(data => {
-            grabImg2.src = `${data.url}`;
+        .then(data => { 
+
+            const imagen = data.url;
+            const format = imagen.slice(-3);
+        
+            if (format === 'mp4') {
+                mostrarFoto2();
+       }    else {
+           grabImg2.src = `${data.url}`;
+       }
     });
 }
