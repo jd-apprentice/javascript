@@ -15,7 +15,7 @@ function mostrarFoto() {
         .then(res => res.json())
         .then(data => {
             grabImg.src = `${data.file}`;
-    });
+    })
 }
 
 function mostrarFoto2() {
@@ -31,5 +31,5 @@ function mostrarFoto2() {
        }    else {
            grabImg2.src = `${data.url}`;
        }
-    });
+    })
 }
